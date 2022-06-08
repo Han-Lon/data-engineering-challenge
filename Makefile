@@ -1,14 +1,15 @@
-ifeq (, $(shell which python))
-	$(error "python was not found in $(PATH). For installation instructions go to https://www.python.org/downloads/.")
-endif
-
-ifeq (, $(shell which docker))
-	$(error "docker was not found in $(PATH). For installation instructions go to https://docs.docker.com/get-docker/.")
-endif
-
-ifeq (, $(shell which docker-compose))
-	$(error "docker-compose was not found in $(PATH). For installation instructions go to https://docs.docker.com/compose/install/.")
-endif
+# # Commenting out due to errors running on Windows. Will check back on a possible fix if time allows
+# ifeq (, $(python --version))
+# 	$(error "python was not found in $(PATH). For installation instructions go to https://www.python.org/downloads/.")
+# endif
+#
+# ifeq (, $(docker version))
+# 	$(error "docker was not found in $(PATH). For installation instructions go to https://docs.docker.com/get-docker/.")
+# endif
+#
+# ifeq (, $(docker-compose version))
+# 	$(error "docker-compose was not found in $(PATH). For installation instructions go to https://docs.docker.com/compose/install/.")
+# endif
 
 
 .PHONY: dependencies

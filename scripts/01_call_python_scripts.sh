@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# Changed file endings to LF from CRLF -- the container did NOT like CRLF line endings, tanked right on line 3
 echo "downloding localstack dependency"
 pip install localstack-client
 
